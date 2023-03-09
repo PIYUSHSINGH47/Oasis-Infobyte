@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100&family=Unbounded:wght@300;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Unbounded', cursive; */
+}
+html{
+    --main:var(#0A2647);
+}
+body{
+    background-color: black;
+}
+.navbar{
+    color: white;
+    background-color:#3C6255 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 20px;
+}
+.logo{
+    padding-bottom: 10px;
+}
+.logo img{
+    width: 2rem;
+}
+.logo h1{
+    display: inline;
+    margin-left:10px;
+    font-family: 'Unbounded', cursive;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.logo p{
+    font-weight: 200;
+}
+.navbarBrand{
+    display: flex;
+    align-items: center;
+}
+.links ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.links ul div{
+    margin-top: 12px;
+    font-weight: 200;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #000;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropdown span{
+    background-color: #3e8e41;
+    cursor: pointer;
+}
+
+
+/* body */
+.container{
+    background-color: #A6BB8D;
+    /* height: calc(100vh-100px); */
+    height: auto;
+}
+
+.card{
+    width:200px;
+    border-radius: 10px;
+    /* height: auto; */
+    /* border: 4px solid red; */
+    overflow: hidden;   
+    margin: 20px;
+    background-color: #61876E;
+    padding-bottom: 5px;
+    box-shadow:1px 1px 10px #61876E;
+}
+.image{
+    width: inherit;
+    overflow: hidden;
+}
+.card .image img{
+    width: inherit;
+    transition: 1.5s;
+}
+.card:hover .image img{
+    transform: scale(1.4)
+}
+.card .price,.card .about{
+    text-align: center;
+}
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+}
+.card .price,.card .about{
+    color: white;
+    font-family:sans-serif;
+    font-weight: 400;
+}
+.card-button{
+    padding:10px;
+    border-radius: 10px;
+    background: #000;
+    color:white;
+    width:80%;
+    margin: 9px 13%;
+    cursor: pointer;
+}
+.card-button:hover{
+    color: white;
+    background-color: #3C6255;
+    
+}
+.main-about{
+    width: 100%;
+    height: 600px;
+    background-color: #3C6255;
+    padding: 20px 100px;
+}
+.about-logo{
+    text-align: center;
+    color: #0A2647;
+}
+.main-about p{
+    margin-top: 50px;
+    text-align: center;
+    color: #0A2647;
+    font-weight: 500;
+}
+.contactMe{
+    width: 100%;
+    height: 200px;
+    background-color:#A6BB8D ;
+    color: black;
+    padding: 20px 100px;
+}
+/* .instagram{
+    width: 50px;
+    height: 50px;
+} */
+.ireland{
+    background-image: url(https://www.activesustainability.com/media/816190/img-portada-salud-oceanos-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 1400px 350px;
+   height: 350px; 
+}
+.land{
+    background-color: #000000a9;
+    height: 400px;
+    padding: 20px 0px;
+}
+.ireland h3{
+    /* margin-top: 10px; */
+    /* background-blend-mode: hard-light; */
+    text-align: center;
+    color: rgba(255, 255, 255, 0.489);
+    font-weight: 500;
+    font-size: 50px;
+
+}
+.ireland p{
+    /* background-color: #0000005f; */
+    margin-top: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.573);
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 0 100px;
+
+}
